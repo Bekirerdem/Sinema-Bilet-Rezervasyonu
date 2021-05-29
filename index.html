@@ -12,9 +12,10 @@
 <body>
 
     <div class="container">
+        <div class="screen"></div>
         <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat selected"></div>
+            <div class="seat selected"></div>
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -25,9 +26,9 @@
         <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -36,9 +37,9 @@
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
             <div class="seat"></div>
             <div class="seat"></div>
         </div>
@@ -63,6 +64,34 @@
             <div class="seat"></div>
         </div>
     </div>
+
+    <div class="movie-list">
+        <select id="movie">
+            <option>Film Seçiniz</option>
+            <option value="20">Doktor Strange</option>
+            <option value="24">Black Widow</option>
+            <option value="30">Matrix 4</option>
+        </select>
+    </div>
+
+    <ul class="info">
+        <li>
+            <div class="seat selected"></div>
+            <small>Seçili</small>
+        </li>
+        <li>
+            <div class="seat"></div>
+            <small>Boş</small>
+        </li>
+        <li>
+            <div class="seat reserved"></div>
+            <small>Dolu</small>
+        </li>
+    </ul>
+
+    <p class="text">
+        <span class="count">3</span> Adet koltuk için hesaplanan ücret <span class="amount">50</span> TL
+    </p>
 
     <script src="script.js"></script>
 
