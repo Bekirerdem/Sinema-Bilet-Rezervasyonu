@@ -1,0 +1,28 @@
+body {
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.seat {
+    background: #444451;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.seat.selected {
+    background: #f6eb6f;
+}
+
+.seat.reserved {
+ background: #fff;
+}
+
+.row {
+    display: flex;
+}
